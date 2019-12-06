@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sqllite</string>
+    <string name="nm">Name</string>
+    <string name="s_name">Surname</string>
+    <string name="y_surname">Your Surname</string>
+    <string name="marks">Marks</string>
+    <string name="your_name">Your Name</string>
+    <string name="add_data">ADD DATA</string>
+</resources>

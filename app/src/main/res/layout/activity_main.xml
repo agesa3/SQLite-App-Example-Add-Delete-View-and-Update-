@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nm"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:inputType="text"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_name"
+        android:layout_marginTop="4sp"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/y_surname"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:inputType="text"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marks"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <EditText
+        android:id="@+id/marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/marks"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:inputType="text"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBtn"
+        android:text="@string/add_data"
+        android:layout_margin="4dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewBtn"
+        android:text="View Data"
+        android:layout_margin="4dp"
+
+        />
+
+</LinearLayout>
