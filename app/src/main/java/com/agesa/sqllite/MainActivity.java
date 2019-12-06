@@ -12,8 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper myDb;
-    EditText nameEdt, surEdt, markEdt;
-    Button addBtn, viewBtn;
+    EditText nameEdt, surEdt, markEdt,updateEdt;
+    Button addBtn, viewBtn,upBtn,deleteBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,41 @@ public class MainActivity extends AppCompatActivity {
         surEdt = findViewById(R.id.surname);
         addBtn = findViewById(R.id.addBtn);
         viewBtn = findViewById(R.id.viewBtn);
+        upBtn=findViewById(R.id.update);
+        updateEdt=findViewById(R.id.rowId);
+        deleteBtn=findViewById(R.id.delete);
         addData();
         viewAll();
+        updateData();
+        deleteData();
+    }
+    public void deleteData(){
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer deleteRows=myDb.deleteData(updateEdt.getText().toString());
+                if (deleteRows>0){
+                    Toast.makeText(MainActivity.this, "Record deleted Successfuly", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "Data Not Deleted", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+    public void updateData(){
+        upBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isUpdate=myDb.upDateData(updateEdt.getText().toString(),nameEdt.getText().toString(),surEdt.getText().toString(),markEdt.getText().toString());
+                if (isUpdate==true){
+                    Toast.makeText(MainActivity.this, "Data is Updated", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "Failed to update", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     public void addData() {
@@ -75,4 +108,5 @@ public class MainActivity extends AppCompatActivity {
         builder.setMessage(Message);
         builder.show();
     }
+
 }

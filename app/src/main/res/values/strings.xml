@@ -6,4 +6,8 @@
     <string name="marks">Marks</string>
     <string name="your_name">Your Name</string>
     <string name="add_data">ADD DATA</string>
+    <string name="row_id">Row ID</string>
+    <string name="view_data">View Data</string>
+    <string name="updatebtn">Update</string>
+    <string name="delete">Delete</string>
 </resources>

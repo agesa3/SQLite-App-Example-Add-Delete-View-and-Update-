@@ -7,14 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nm"
-        android:layout_marginTop="30sp"
-        android:layout_gravity="center_horizontal"
 
-        />
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
@@ -24,14 +17,7 @@
         android:layout_margin="4dp"
         android:inputType="text"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/s_name"
-        android:layout_marginTop="4sp"
-        android:layout_gravity="center_horizontal"
 
-        />
     <EditText
         android:id="@+id/surname"
         android:layout_width="match_parent"
@@ -41,19 +27,21 @@
         android:layout_margin="4dp"
         android:inputType="text"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/marks"
-        android:layout_marginTop="4dp"
-        android:layout_gravity="center_horizontal"
 
-        />
     <EditText
         android:id="@+id/marks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/marks"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/rowId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/row_id"
         android:layout_gravity="center_horizontal"
         android:layout_margin="4dp"
         android:inputType="text"
@@ -70,9 +58,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/viewBtn"
-        android:text="View Data"
+        android:text="@string/view_data"
         android:layout_margin="4dp"
 
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:text="@string/updatebtn"
+        android:layout_margin="4dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:text="@string/delete"
+        android:layout_margin="4dp"
+
+        />
+
 
 </LinearLayout>
